@@ -47,6 +47,8 @@ public class DemoController {
 
     }
     @PutMapping()
+
+    //put mapping
     public String editDemo(@RequestBody DemoEntity update){
         DemoEntity demo = demoService.findById(update.getId());
         demo.setName(update.getName());
